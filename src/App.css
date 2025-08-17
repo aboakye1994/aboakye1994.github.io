@@ -1,38 +1,140 @@
-.App {
+a, a:active, a:hover {
+  text-decoration: none;
+  color: white;
+  outline: 0;
+}
+
+/* Header section */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header-logo {
+  padding: 5px 28px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-name {
+  color: #edf2f4;
+  border: 3px solid #edf2f4;
+  padding: 0.7em;
+  font-size: 1rem;
+  animation: show 0.5s;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  align-items: center;
+  padding: 1.64rem;
+  text-align: right;
+  color: lightgrey;
+  z-index: 2;
+  transition: all .2s linear;
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-right: 2rem;
+}
+
+.nav-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: .2rem;
+  opacity: 0;
+  bottom: -1rem;
+  left: 0;
+  transition: all .1s ease-in-out;
+  background-color: lightgray;
+}
+
+.nav-item:hover:after {
+  opacity: 1;
+}
+/* End of Header section */
+
+/* Body Section */
+.body {
+  position: relative;
+  background-color: #343434;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 56rem;
+}
+
+.body-container {
+  position: relative;
+  display: flex;
+  min-width: 120rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.body-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+.body-img {
+  width: 100%;
+  transform: scale(.95);
+  border-radius: 50%;
+}
+
+.body-content {
+  padding-top: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.body-headline {
+  font-size: 3rem;
+  padding-bottom: 1rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.body-text {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 2.8rem;
 }
+
+.icon-link {
+  padding: 0.8rem 0.8rem;
+  color: white;
+}
+
+.icon-link:hover {
+  color: lightgray;
+  transform: scale(1.05);
+}
+
+/* End of Body Section */
