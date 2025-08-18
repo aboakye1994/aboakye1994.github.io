@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Project Title Placeholder",
+    "description": "This is a placeholder for a future project. It will showcase skills in frontend development, APIs, and UI/UX design.",
+    "link": "https://github.com/"
+  },
+  {
+    "name": "Coming Soon: Backend Project",
+    "description": "A backend-focused project currently in development. This will demonstrate server-side logic, database integration, and REST API design.",
+    "link": "https://github.com/"
+  },
+  {
+    "name": "Mobile App Placeholder",
+    "description": "This card represents a future mobile project using React Native. It will focus on building responsive interfaces and working with real-time data.",
+    "link": "https://github.com/"
+  }
+]
